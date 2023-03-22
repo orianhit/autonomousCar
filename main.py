@@ -6,15 +6,16 @@ from utils.lanes_and_objects import extract_cnts, add_cnts_to_image
 from utils.iterate_from_data import get_iterator
 from utils.view import display_lines
 
+VIDEOS_LOCATION = "cut_deer_video.mp4"
 RESIZE_TO = 1000
 
 if __name__ == '__main__':
     first_frame = None
     old_averaged_lines = []
-    for frame in get_iterator("cut_deer_video.mp4"):
+    for frame in get_iterator(VIDEOS_LOCATION):
         try:
             resized_img = imutils.resize(frame, width=RESIZE_TO)
-            cv2.imshow("result", frame)
+            cv2.imshow("resize", frame)
 
             canny_image = canny(resized_img)
             cv2.imshow("canny", canny_image)
@@ -39,7 +40,7 @@ if __name__ == '__main__':
 
                 cnts = extract_cnts(first_frame, canny_image)
                 add_cnts_to_image(cnts, averaged_lines, combo_image, RESIZE_TO)
-                cv2.imshow("cameraFeed", combo_image)
+                cv2.imshow("final with object detection", combo_image)
 
         except Exception as ex:
             continue
