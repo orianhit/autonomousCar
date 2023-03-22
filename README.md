@@ -6,7 +6,7 @@
 - Presentation file is `פרוייקט סופי רכב אוטונומי אינטיליגנטי.pptx` under the root of this project
 - Demo video on `https://youtu.be/8pshQXj9T8k` 
 
-##in order to use the project
+## in order to use the project
 1. run `pip install -r requirements.txt`
 2. change `VIDEOS_LOCATION` parameter in main.py to the desired video or image dir (should be under data dir)
 3. select which view you want to see by simply commenting out the unwanted videos
