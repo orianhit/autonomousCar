@@ -15,4 +15,10 @@ there are many hyperparams, some to keep in mind
 2. changing crop in `image_manipulation.py` for other camera locations
 3. slope in function `average_slope_intercept` under `lines.py`, should be changed for semi horizontal roads / more straight ones (highways)
 4. function `extract_cnts` under `lanes_and_objects.py` may be change to detect more/less objects
-5. 
+
+
+## presentation
+- Project summary is in `Project_Summary-תקציר הפרויקט.docx` under the root of this project
+- Project display video: `https://www.youtube.com/watch?v=dMfKbLgRf4o`
+- Presentation file is `פרוייקט סופי רכב אוטונומי אינטיליגנטי.pptx` under the root of this project
+- Demo video on `https://youtu.be/8pshQXj9T8k` 
