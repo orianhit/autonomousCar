@@ -2,7 +2,8 @@
 
 ## presentation
 - Project summary is in `Project_Summary-תקציר הפרויקט.docx` under the root of this project
-- Project Document (explaining the tech, the need and the usage) in `autonomousCarDocFile.docx` 
+- Project Document (explaining the tech, the need and the usage) in `autonomousCarDocFile.docx`
+
 [//]: # (todo: record new version with actual explanation)
 - WIP -> Project display video: `https://www.youtube.com/watch?v=dMfKbLgRf4o`
 - Presentation file is `פרוייקט סופי רכב אוטונומי אינטיליגנטי.pptx` under the root of this project
