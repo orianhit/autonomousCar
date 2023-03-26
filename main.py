@@ -10,7 +10,7 @@ VIDEOS_LOCATION = "cut_deer_video.mp4"
 RESIZE_TO = 1000
 
 if __name__ == '__main__':
-    first_frame = None
+    previous_frame = None
     old_averaged_lines = []
     for frame in get_iterator(VIDEOS_LOCATION):
         try:
@@ -34,11 +34,11 @@ if __name__ == '__main__':
                 combo_image = add_weighted(resized_img, avg_line_image)
                 cv2.imshow("avg lines", combo_image)
 
-                if first_frame is None:
-                    first_frame = canny_image  # capturing 1st frame on 1st iteration
+                if previous_frame is None:
+                    previous_frame = canny_image  # capturing 1st frame on 1st iteration
                     continue
 
-                cnts = extract_cnts(first_frame, canny_image)
+                cnts = extract_cnts(previous_frame, canny_image)
                 add_cnts_to_image(cnts, averaged_lines, combo_image, RESIZE_TO)
                 cv2.imshow("final with object detection", combo_image)
 
