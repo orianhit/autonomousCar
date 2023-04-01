@@ -6,7 +6,7 @@ from utils.lanes_and_objects import extract_cnts, add_cnts_to_image
 from utils.iterate_from_data import get_iterator
 from utils.view import display_lines
 
-VIDEOS_LOCATION = "cut_deer_video.mp4"
+VIDEOS_LOCATION = "full_drive.mp4"
 RESIZE_TO = 1000
 
 if __name__ == '__main__':
